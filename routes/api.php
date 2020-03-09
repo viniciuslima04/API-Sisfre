@@ -2,17 +2,16 @@
 
 use Illuminate\Http\Request;
 
-//Route::apiResource('teste','api\ApiController');
 
-
-//TRAZER ROTA PRA CÁ
-
-Route::get('relatorio/professor', 'RelatorioController@professores')->name('relatorio.professor');
+Route::get('teste', 'ApiRelatorioController@professoresApi');
 
 
 
 
-//Route::get('Api', 'RelatorioController@professores')->name('relatorio.professor');
+
+
+
+
 
 //CONSULTAS QUE VAMOS PRECISAR 
 // $aulas = DB::select('select distinct(d.id), d.nome as disciplina,

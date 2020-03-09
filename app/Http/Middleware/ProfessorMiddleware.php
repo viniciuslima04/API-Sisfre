@@ -12,6 +12,9 @@ class ProfessorMiddleware
 
     public function handle($request, Closure $next)
     {
+        $app = $request->path();
+        echo $app;
+        exit;
         if(!auth()->check()){
             return redirect()->route('login');
         }
